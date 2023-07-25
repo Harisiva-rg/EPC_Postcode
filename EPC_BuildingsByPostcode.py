@@ -11,6 +11,7 @@ EPC_top_100 = EPC_postcode_group.head(100)
 # EPC_top_100.loc[:, 'Serial No'] = range(1, 101)
 
 app = dash.Dash(__name__)
+server = app.server
 app.title = "Domestic Buildings Based on Postcodes"
 
 app.layout = html.Div([
